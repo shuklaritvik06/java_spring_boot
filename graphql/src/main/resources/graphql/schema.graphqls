@@ -1,0 +1,37 @@
+type Query {
+    orders: [Order]
+    customers: [Customer]
+    getOrder(orderId: String): Order
+    getCustomer(customerId: String): Customer
+}
+type Order {
+    id: ID!
+    amount: Int!
+    delivery_address: String!
+    delivery_date: Int!
+    customer_id: Int!
+}
+type Customer {
+    id: ID!
+    name: String!
+    age: Int!
+    address: String!
+}
+type Mutation{
+    add_order(order: OrderInput): Order
+    add_customer(customer: CustomerInput): Customer
+    delete_order(id: String!): Order
+    update_order(id: String!, order: OrderInput): Order
+    update_customer(id: String!, customer:CustomerInput): Customer
+}
+input OrderInput{
+    amount: Int!
+    delivery_address: String!
+    delivery_date: Int!
+    customer_id: Int!
+}
+input CustomerInput{
+    name: String!
+    age: Int!
+    address: String!
+}

@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    hibernate:
+      ddlAuto: update
+    showSql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/jwtauth
+    username: root
+    password: ritvik
+    driverClassName: com.mysql.cj.jdbc.Driver
+application:
+  security:
+    jwt:
+      secret-key: cd3de7dafebcd3de7dafeba2fcd3de7dafeba2f9637254e52017a5b889637254e52017a5b88a2f9637254e52017a5b88
+      expiration: 86400000
+      refresh-token:
+        expiration: 604800000
