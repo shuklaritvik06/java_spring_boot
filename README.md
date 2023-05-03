@@ -13,3 +13,4 @@ Java Spring Boot Learnings
 - [x] WebSockets
 - [x] Oauth2
 - [x] Database Relationships
+- [x] Thymeleaf CRUD 
