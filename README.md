@@ -1,5 +1,7 @@
 # Java Spring Boot
 
+![top-10-reasons-to-use-spring-framework-1](https://github.com/shuklaritvik06/java_spring_boot/assets/72812470/cb3b1fc9-5f33-402a-b740-b45c49441be3)
+
 This repository contains a collection of Spring Boot projects. Each project is a stand-alone, production-grade application built using Spring Boot framework.
 
 ## Overview
