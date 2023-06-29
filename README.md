@@ -14,6 +14,8 @@ The repository is organized into separate directories, with each directory repre
 
 - Dependencies: The project's dependencies are managed using a build tool such as Maven or Gradle. The build configuration file (pom.xml or build.gradle) lists all the required dependencies and their versions.
 
+## Projects
+
 - [x] Mongo CRUD
 - [x] MySQL CRUD
 - [x] CLI 
