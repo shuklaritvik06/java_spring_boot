@@ -1,6 +1,9 @@
+# Configuration for the server, specifying the port on which the application will run.
 server:
   port: 8088
 
+# Configuration for Spring Boot profiles.
 spring:
   profiles:
+    # The "native" profile is set as the active profile.
     active: native
