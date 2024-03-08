@@ -1,12 +1,17 @@
+# Configuration for the server, specifying the port on which the microservice will run.
 server:
   port: 8081
 
+# Configuration for connecting to Eureka for service registration and discovery.
 eureka:
   client:
     serviceUrl:
+      # Default Eureka server URL where service instances are registered and discovered.
       defaultZone: http://localhost:8761/eureka/
 
+# Configuration for management features, specifically tracing.
 management:
   tracing:
     sampling:
+      # Probability of sampling traces, set to 1.0 (100%) to capture all traces.
       probability: 1.0
