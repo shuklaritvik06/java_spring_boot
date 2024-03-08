@@ -1,5 +1,11 @@
+# Configuration for a Spring Boot application
 spring:
+  # Application-specific properties
   application:
+    # Set the name of the Spring Boot application to "api-gateway"
     name: api-gateway
+
+  # Configuration for importing external configuration from a Config Server
   config:
+    # Specify the import source as a Config Server
     import: "optional:configserver:http://localhost:8088/"
