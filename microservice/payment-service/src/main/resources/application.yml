@@ -1,9 +1,19 @@
+# Configuration for a Spring Boot application
 spring:
   application:
+    # Set the name of the Spring Boot application to "payment-service"
     name: payment-service
+
+  # Configuration for importing external configuration from a Config Server
   config:
+    # Specify the import source as a Config Server
     import: "optional:configserver:http://localhost:8088/"
+
+  # Configuration for data-related settings
   data:
     mongodb:
+      # MongoDB connection URI including credentials and cluster information
       uri: mongodb+srv://${MONGO_USER}:${MONGO_PASSWORD}@cluster0.vkvs8nl.mongodb.net/?retryWrites=true&w=majority
+      
+      # MongoDB database name taken from the environment variable MONGO_DATABASE
       database: ${MONGO_DATABASE}
