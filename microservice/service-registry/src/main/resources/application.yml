@@ -1,15 +1,27 @@
+# Configuration for the server properties
 server:
+  # Set the port number to 8761 for the embedded server
   port: 8761
 
+# Configuration for the Spring Boot application properties
 spring:
   application:
+    # Set the name of the Spring Boot application to "service-registry"
     name: service-registry
 
+# Configuration specific to Eureka, the service registry
 eureka:
   instance:
+    # Set the hostname for the Eureka instance to "localhost"
     hostname: localhost
+
   client:
+    # Disable automatic registration with Eureka
     registerWithEureka: false
+    
+    # Disable fetching the registry from other instances
     fetchRegistry: false
+
+    # Set the Eureka service URL, pointing to the local Eureka server
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
